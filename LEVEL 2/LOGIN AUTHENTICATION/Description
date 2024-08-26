@@ -1,1 +1,14 @@
+This web application is a *simple login authentication system* that allows users to register, log in, and reset their passwords.
 
+### *Key Features:*
+- *User Registration*: Users can create an account with a username and password. Passwords are securely hashed and stored.
+- *User Login*: Validates user credentials and grants access to a secure page after successful login.
+- *Password Reset*: Allows users to reset their password if forgotten, with the new password also being securely hashed.
+
+### *Technologies Used:*
+- *HTML*: Structures the webpage with forms and input fields.
+- *CSS*: Styles the webpage for a professional and responsive design.
+- *JavaScript*: Manages the logic for registration, login, and password reset, and securely handles user data with hashing and browser storage.
+
+### *Summary*:
+This app is a foundational example of a secure user authentication system, ideal for small projects or as a base for more complex applications.
