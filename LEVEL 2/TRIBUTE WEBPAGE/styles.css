@@ -1,0 +1,218 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google Fonts Integration */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Tribute Image */
+.tribute-image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tribute-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2980b9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tribute-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tribute-image figcaption {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Tribute Content */
+.tribute-content {
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-family: 'Merriweather', serif;
+}
+
+.tribute-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-left: 5px solid #2980b9;
+    padding-left: 15px;
+}
+
+.tribute-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Timeline */
+.timeline h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-left: 5px solid #2980b9;
+    padding-left: 15px;
+}
+
+.timeline ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.timeline li {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.timeline li:before {
+    content: "•";
+    color: #2980b9;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.timeline li:hover {
+    color: #2980b9;
+}
+
+/* Quotes Section */
+.quotes {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-left: 5px solid #2980b9;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.quotes h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 4px solid #2980b9;
+    quotes: "“" "”";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-size: 2em;
+    color: #2980b9;
+    margin-right: 10px;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-size: 2em;
+    color: #2980b9;
+    margin-left: 10px;
+    vertical-align: -0.4em;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer p:last-child {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.4em;
+    }
+
+    .tribute-content h2, .timeline h2, .quotes h2 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .tribute-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
