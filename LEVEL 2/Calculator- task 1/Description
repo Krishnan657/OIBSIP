@@ -1,1 +1,7 @@
-
+This calculator is a versatile web-based tool designed with HTML, CSS, and JavaScript. 
+It offers basic arithmetic operations (addition, subtraction, multiplication, and division)
+alongside advanced functions like square root, square, and modulus. 
+The calculator also supports parentheses for grouping operations, ensuring accurate calculations.
+Its responsive design adapts to any screen size, with enhanced CSS styling providing a sleek, modern look. 
+Buttons are intuitive, with visual feedback on hover and press, making it easy to use on both desktop and mobile devices. 
+The JavaScript backend ensures smooth, real-time processing of all user inputs.
