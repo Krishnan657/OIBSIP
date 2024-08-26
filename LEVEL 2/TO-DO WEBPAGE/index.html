@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="TO-DO.jpg" alt="Logo" class="logo">
+            <h1>TO-DO LIST</h1>
+        </header>
+
+        <section class="task-input-section">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <select id="task-priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <input type="date" id="task-deadline">
+            <select id="task-category">
+                <option value="">Select category</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+            <button id="add-task-btn" onclick="addTask()">Add</button>
+        </section>
+
+        <section class="search-filter-section">
+            <input type="text" id="search-task" placeholder="Search tasks..." oninput="searchTasks()">
+            <select id="filter-priority" onchange="filterByPriority()">
+                <option value="">All Priorities</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button onclick="clearAllTasks()">Clear All</button>
+        </section>
+
+        <section class="notification-section">
+            <h2>Notifications</h2>
+            <ul id="notifications"></ul>
+        </section>
+
+        <section class="task-lists">
+            <article class="task-list">
+                <h2>Pending Tasks</h2>
+                <ul id="pending-tasks"></ul>
+            </article>
+
+            <article class="task-list">
+                <h2>Completed Tasks</h2>
+                <ul id="completed-tasks"></ul>
+            </article>
+        </section>
+    </div>
+
+    <!-- Edit Task Modal -->
+    <div id="edit-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Task</h2>
+            <input type="text" id="edit-task-text" placeholder="Task description">
+            <select id="edit-task-priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <input type="date" id="edit-task-deadline">
+            <select id="edit-task-category">
+                <option value="">Select category</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+            <button onclick="saveTaskEdit()">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
